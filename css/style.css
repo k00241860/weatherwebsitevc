@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/*** Scrollbar syling***/
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #242322;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#FFC857;
+    border-radius: 10px;
+  }
+
+/*** Header Styling ***/
+li, a, button, h2, h1, h3, h4, span{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.all {
+background: url("../images/weatherBackground.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat ;
+height: 100vh;
+}
+
+.currentPage{
+    color:#FFC857;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.logo {
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    margin-right: auto;
+}
+
+nav {
+    margin-right: 80px;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover{
+    color: #FFC857;
+}
+.accountOptions{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.accountOptions button{
+    padding: 9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+
+
+.loginLink button:hover{
+    background-color: #FFC857;
+    color: #100F0D;
+}
+
+.signUpLink button:hover{
+    background-color: rgba(255, 200, 87,0.8);
+    color: white;
+}
+
+.loginLink button{
+    background: none;
+    border: solid rgba(255, 200, 87,1) 1px;
+}
+.signUpLink button{
+    background-color: rgba(255, 200, 87,1);
+    color: #100F0D;
+    border: none;
+}
+
+
+/*** HomePage Main Content ***/
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.inputFormArea{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+.weatherInputForm .inputField input {
+    margin-bottom: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.weatherInputForm label {
+    font-size: 12px;
+    color:rgba(255, 255, 255, 0.8);
+    margin-left: 10px; 
+    font-weight: 600;
+}
+
+.form_Btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_Btns .searchBtn{
+    background: none;
+    border: solid rgba(255, 200, 87,1) 1px;
+    padding: 9px 25px;
+    cursor: pointer;
+    padding: 11px 50px;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color:#FFFFFF;
+}
+
+.form_Btns .searchBtn:hover{
+    background-color: #FFC857;
+    color: #100F0D;
+}
+
+.formTitle h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    font-size: 36px;
+}
+/** Register Page **/
+
+.accountTitle h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    font-size: 36px;
+}
+
+.accountForm{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+
+}
+    
+.accountForm .inputField input {
+    margin-bottom: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid rgb(173, 173, 173);
+}
+    
+    .accountForm label {
+        font-size: 12px;
+        color:rgba(255, 255, 255, 0.8);
+        margin-left: 10px; 
+        font-weight: 600;
+    }
+    
+    .account_Btns{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    
+    .account_Btns .loginLink{
+        background: none;
+        border: solid rgba(255, 200, 87,1) 1px;
+        padding: 9px 25px;
+        cursor: pointer;
+        padding: 11px 50px;
+        transition: all 0.3s ease 0s;
+        font-weight: 700;
+        color:#FFFFFF
+    }
+    
+    .account_Btns .registerLink{
+        background: none;
+        border: solid rgba(255, 200, 87,1) 1px;
+        padding: 11px 40px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-weight: 700;
+        color:#FFFFFF;
+    }
+    
+    .account_Btns .registerLink:hover{
+        background-color: #FFC857;
+        color: #100F0D;
+    }
+    
+    .account_Btns .loginLink:hover{
+        background-color: #FFC857;
+        color: #100F0D;
+    }
+    
+    
+    .account_Btns .cancelBtn {
+        background-color: rgba(255, 200, 87,1);
+        color: #100F0D;
+        border: none;
+        padding: 11px 40px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-weight: 700;
+    }
+    
+    .account_Btns  .cancelBtn:hover{
+        background-color: rgba(255, 200, 87,0.8);
+        color: white;
+    }
