@@ -32,34 +32,23 @@ $user_data = check_login($con);
             </div>
         </header>
         <div class="main">
-        <div class="inputFormArea">
-            <div class="inputFormAreaContent">
-            <div class="weatherInputForm">
-            <form method="POST">                   
-                        <div class="formTitle"><h1>Details</h1></div>
+        <div class="accountForm">
+                    <form method="post">
+                        <div class="accountTitle"><h1>REGISTER</h1></div>
                         <div class="inputField">
-                            <label>Location</label>
-                            <input type="text" class="input"/>
+                            <label>Username</label>
+                            <input type="text" class="input" name="username"/>
                         </div>
                         <div class="inputField">
-                            <label>Latitude</label>
-                            <input type="text" class="input"/>
+                            <label>Password</label>
+                            <input type="password" class="input" name="password"/>
                         </div>
-                        <div class="inputField">
-                            <label>Longitude</label>
-                            <input type="text" class="input"/>
+                        <div class="account_Btns">
+                            <input type="submit" value="Cancel" class="cancelBtn"/>
+                            <input type="submit" value="Register" class="registerLink"/>
                         </div>
-                        <div class="inputField">
-                            <label>Date</label>
-                            <input type="text" class="input"/>
-                        </div>
-                        <div class="form_Btns">
-                            <input type="submit" value="Search" class="searchBtn"/>
-                        </div>
-                        </form>
+                            </form>
                     </div>
-            </div>
-        </div>
         </div>
 </div>
 </body>

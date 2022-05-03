@@ -2,7 +2,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "optunes";
+$dbname = "weatherdb";
 
 if(!$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname))
 {
