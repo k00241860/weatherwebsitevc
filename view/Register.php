@@ -21,7 +21,7 @@ $user_data = check_login($con);
             <img class="logo"  src="../images/logo.png" class="logo" alt="websiteLogo"/>
             <nav>
                 <ul class="navLinks">
-                    <li><a href="/" class="currentPage">HOME</a></li>
+                <li><a href="HomePageUnlogged.php" class="currentPage">HOME</a></li>
                     <li><a href="#">WEATHER</a></li>
                     <li><a href="#">ABOUT</a></li>
                 </ul>

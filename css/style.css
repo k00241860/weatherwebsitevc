@@ -128,7 +128,6 @@ nav {
     margin-top: 5%;
     justify-content: center;
     align-items: center;
-    height: 600px;
     width: 800px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 50px;
@@ -169,6 +168,7 @@ nav {
     transition: all 0.3s ease 0s;
     font-weight: 700;
     color:#FFFFFF;
+    margin-bottom: 20px;
 }
 
 .form_Btns .searchBtn:hover{
