@@ -19,8 +19,8 @@ include 'connection.php';
             <img class="logo"  src="../images/logo.png" class="logo" alt="websiteLogo"/>
             <nav>
                 <ul class="navLinks">
-                    <li><a href="HomePage.php" class="currentPage">HOME</a></li>
-                    <li><a href="WeatherDetails.php">WEATHER</a></li>
+                    <li><a href="HomePage.php">HOME</a></li>
+                    <li><a href="WeatherDetails.php" class="currentPage">BROWSE WEATHER DATA</a></li>
                 </ul>
             </nav>
         </header>

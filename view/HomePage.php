@@ -55,7 +55,7 @@ if(isset($_POST['submitDB'])){
             <nav>
                 <ul class="navLinks">
                     <li><a href="HomePage.php" class="currentPage">HOME</a></li>
-                    <li><a href="WeatherDetails.php">WEATHER</a></li>
+                    <li><a href="WeatherDetails.php">BROWSE WEATHER DATA</a></li>
                 </ul>
             </nav>
         </header>
