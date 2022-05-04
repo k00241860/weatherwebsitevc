@@ -1,43 +1,29 @@
 
+
 <?php
-error_reporting(0);
-$locationInput = $_GET['locationFormInput'];
-$dateInput = $_GET['dateFormInput'];
+include("connection.php");
 
-if(array_key_exists('submit', $_GET)){
-    //checking if input is empty
-    if(!$_GET['locationFormInput'] && ['dateFormInput']) {
-        $error = "Your input field is empty";
+
+if(isset($_POST['submit'])) {
+$address = 'Limerick';
+$tempmax =  21;
+$tempmin = 12;
+
+        $sql = "insert into weathertest (location, tempmax, tempmin)
+        values ('$address', '$tempmax', '$tempmin')";
+        $result = mysqli_query($con,$sql);
+        if($result) {
+            echo "Data Inserted Successfully";
+        }else{
+            die(mysqli_error($con));
+        }
     }
-    if($_GET['locationFormInput'] && ['dateFormInput']) {
-        $api_url = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'.$locationInput.'/'.$dateInput.'/?key=EM9MA57ZMBRCVK2R8DYX4UQ9X&contentType=json';
-        $weather_data = json_decode(file_get_contents($api_url), true);
-        $address = "<b>Location: </b><br>" . $weather_data['address'];
-        $date = "<b>Date: </b><br>" . $weather_data['days']['0']['datetime'];
-    }
-}
 ?>
+<form method="POST">
+    <?php
+    echo '<b>Location: </b>' . $address . '<br><b>Max Temperature: </b>' . $tempmax . '<br><b>Min Temperature: </b>' . $tempmin;
+    ?>
+    <input name=submit type=submit>
+</form>
 
-<form method="GET" action="weathertest.php">                   
-            <div class="formTitle"><h1>Details</h1></div>
-            <div class="inputField">
-        <label>Location</label>
-        <input type="text" class="input" name="locationFormInput"/>
-        </div>
-    <div class="inputField">
-    <label>Date</label>
-    <input type="text" class="input" name="dateFormInput"/>
-    <div>
-                        <div class="form_Btns">
-                            <input type="submit" value="Search" class="searchBtn" name="submit"/>
-                        </div>
-                        </form>
-                        <?php
-                            if($address && $date) {
-                                echo $address .
-                                '<br>' . $date;
-                                }
-                        if($error){
-                            echo $error;
-                        }
-                        ?>
+
